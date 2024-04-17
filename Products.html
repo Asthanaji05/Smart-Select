@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top  Products</title>
+    <style>
+        html,body{
+            margin:0;
+            padding:0;
+            background-color:black;
+            color:white;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+        }
+        thead th{
+            border:10px solid rgb(151, 0, 185);
+            background-color:rgb(151, 0, 185);
+        }
+        table{
+            display:block;
+            margin:1%;
+            padding: 0;
+            border: none;
+            border-collapse: collapse; /* Collapse table borders */
+        }
+        tr{
+            border: none;
+            border-bottom: 1px solid rgb(151, 0, 185);
+        }
+        tr td{
+            padding-top: 3%;
+            padding-bottom: 3%;
+            padding-left:1%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Top  Products for {{ products.iloc[0]['Brand Name'] }}:</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Score</th>
+                <th>PS</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for index, row in products.iterrows() %}
+                <tr>
+                    <td>{{ row['Product Name'] }}</td>
+                    <td>{{ row['Score'] }}</td>
+                    <td>{{ row['PS'] }}</td>
+                    <td>{{ row['Price'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation system</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+
+<h1>Smart Select ,<br> Elevate your smartphone search <br> with data-driven insights</h1>
+<h4>
+    Where Data Meets Preference. Explore our vast database of smartphones <br>and user reviews to find the ideal device tailored to your needs
+</h4>
+<br>
+<button id="doc">Documentation</button>
+</header>
+<div id="banner">
+    <h1>Pick your Tech Titan</h1>
+    <div id="brand">
+        <form action="/products" method="post">
+            <select name="brand" class="slct">
+                {% for brand in brands %}
+                    <option value="{{ brand }}">{{ brand }}</option>
+                {% endfor %}
+            </select>
+            <br>
+            <input type="submit" value="Unlock the best picks" id="btn">
+        </form>
+    </div>
+
+            <!-- Price Range Meter -->
+
+
+<h1>Set your Spending Spectrum</h1>
+    <div id="price">
+        
+        <form action="/getTopProducts" method="post">
+            <select id="price-range" class="slct" name="PS" onchange="updateProducts();">
+                <option value="1">0 - 260</option>
+                <option value="2">261 - 520</option>
+                <option value="3">521 - 780</option>
+                <option value="4">781 - 1040</option>
+                <option value="5">1041 - 1300</option>
+                <option value="6">1301 - 1560</option>
+                <option value="7">1561 - 1820</option>
+                <option value="8">1821 - 2080</option>
+                <option value="9">2081 - 2340</option>
+                <option value="10">2341 - 2600</option>
+            </select>
+            <br>
+            <button type="submit" id="btn">Get Top 15 Products</button>
+        </form>
+    </div>
+</div>
+
+    <!-- PS -->
+    <div>
+        <p style="color:rgb(151, 0, 185);">PS (Price Score): <span id="ps">1</span></p>
+    </div>
+    </div>
+    <script>
+        function updateProducts() {
+            var priceRange = document.getElementById("price-range").value;
+            document.getElementById("ps").textContent = priceRange;
+        }
+
+    </script>
+</body>
+<footer>
+    <div>
+        <img src="{{ url_for('static', filename='logo.jpg') }}" alt="logo">
+    </div>
+    <div>
+        
+            <span>Shashank Asthana</span>
+            <span>Shreya Asthana</span>
+            <span>Adarsh Kumar Verma</span>
+            <span>Makadia Nidat</span>
+            <span>Archit Pant</span>
+    </div>
+</footer>
+</html>
