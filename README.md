@@ -41,3 +41,6 @@ The Customer Reviews Analysis Based Recommendation System of Smartphones is a pr
 <a href="https://github.com/Asthanaji05">
   <img src="https://github.com/Asthanaji05.png?size=50">
 </a>
+<a href="https://github.com/Asthanaji05">
+  <img src="https://github.com/Asthanaji05.png?size=50" style="border-radius: 50%;">
+</a>
