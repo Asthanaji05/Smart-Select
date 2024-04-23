@@ -33,3 +33,7 @@ The Customer Reviews Analysis Based Recommendation System of Smartphones is a pr
 - Nidat Makadia
 - Adarsh Kumar Verma
 
+## 
+## Contributors
+- [Shashank Asthana](https://github.com/Asthanaji05)
+- [Shreya Asthana](https://github.com/Shreya-Asthana)
