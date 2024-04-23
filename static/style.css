@@ -80,7 +80,7 @@ footer div img{
     height: auto;
 }
 header h1,h4 {
-    background: -webkit-linear-gradient(45deg,#eeeeee , #605f60 45%);
+    background: -webkit-linear-gradient(55deg,#ffffff , #ba9bf8 48%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -91,7 +91,7 @@ footer span::after{
     color:rgb(151, 0, 185)
 }
 footer{
-    background: -webkit-linear-gradient(45deg,#f05277, #7606fe 50%);
+    background: -webkit-linear-gradient(45deg,#1283e0, #fe06ed 60%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
