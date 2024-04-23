@@ -35,5 +35,9 @@ The Customer Reviews Analysis Based Recommendation System of Smartphones is a pr
 
 ## 
 ## Contributors
-- [Shashank Asthana](https://github.com/Asthanaji05.png)
+- [Shashank Asthana](https://github.com/Asthanaji05)
 - [Shreya Asthana](https://github.com/Shreya-Asthana)
+
+<a href="https://github.com/Asthanaji05">
+  <img src="https://github.com/Asthanaji05.png?size=50">
+</a>
