@@ -43,6 +43,7 @@
         <thead>
             <tr>
                 <th>Product Name</th>
+                <th>Brand Name</th>
                 <th>Score</th>
                 <th>PS</th>
                 <th>Price</th>
@@ -52,6 +53,7 @@
             {% for index, row in products.iterrows() %}
                 <tr>
                     <td>{{ row['Product Name'] }}</td>
+                    <td>{{ row['Brand Name'] }}</td>
                     <td>{{ row['Score'] }}</td>
                     <td>{{ row['PS'] }}</td>
                     <td>{{ row['Price'] }}</td>
