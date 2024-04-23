@@ -5,6 +5,14 @@ app = Flask(__name__)
 
 # Load the dataset
 df = pd.read_csv('data.csv')
+import pandas as pd
+
+# Load the dataset
+df = pd.read_csv('data.csv')
+
+
+# Now you can use the filled 'Brand Name' column for your further processing
+
 
 @app.route('/')
 def index():
@@ -41,7 +49,7 @@ def products():
     selected_brand = request.form['brand']
     df['Score'] = df['Score'].round(3)
     # Filter dataset based on the selected brand
-    brand_products = df[df['Brand Name'] == selected_brand]
+    brand_products = df[(df['Brand Name'] == selected_brand)]
 
     # Sort the filtered data by 'PS' and 'Score' columns
     sorted_products = brand_products.sort_values(by=['PS', 'Score'], ascending=False)
@@ -56,11 +64,9 @@ def products():
 def getTopProducts():
     # Get the specified PS from the form data
     ps = int(request.form['PS'])
-
+    df['Score'] = df['Score'].round(3)
     # Filter dataset based on the specified PS
-    filtered_products = df[df['PS'] == ps]
-    filtered_products = filtered_products[filtered_products['Brand Name'] != "nan"]
-
+    filtered_products = df[(df['PS'] == ps)]
     # Sort the filtered data by 'PS' column and get top 15 products
     top_15_products = filtered_products.sort_values(by='Score', ascending=False).head(15)
 
