@@ -30,3 +30,7 @@ The Customer Reviews Analysis Based Recommendation System of Smartphones(and rel
   <img src="https://github.com/Asthanaji05.png?size=50"/>
 </a>
 
+# LinkedIn
+- https://www.linkedin.com/in/asthanaji05/
+- https://www.linkedin.com/in/asthanas/
+
