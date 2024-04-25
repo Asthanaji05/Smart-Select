@@ -1,7 +1,7 @@
 # Customer Reviews Analysis Based Recommendation System of Smartphones
 # SmartSelect
 ## Overview
-The Customer Reviews Analysis Based Recommendation System of Smartphones is a project aimed at providing users with personalized smartphone recommendations based on sentiment analysis of customer reviews. By leveraging a dataset of over 400,000 reviews from Amazon.com, our system processes the data to generate recommendations sorted by sentiment scores, ensuring that users receive informed suggestions based on real customer experiences.
+The Customer Reviews Analysis Based Recommendation System of Smartphones(and related) is a project aimed at providing users with personalized smartphone recommendations based on sentiment analysis of customer reviews. By leveraging a dataset of over 400,000 reviews from Amazon.com, our system processes the data to generate recommendations sorted by sentiment scores, ensuring that users receive informed suggestions based on real customer experiences.
 
 ## Workflow
 1. **Collecting Dataset**: Gathered over 400,000 reviews of unlocked mobile phones sold on Amazon.com from 2017.
@@ -14,26 +14,13 @@ The Customer Reviews Analysis Based Recommendation System of Smartphones is a pr
 - **Front-end**: HTML, CSS, JavaScript (JS)
 - **Back-end**: Python, Flask
 
-## Technologies Used
-- Python
-- Flask
-- HTML
-- CSS
-- JavaScript
 
 ## How to Run
 1. Clone this repository to your local machine.
 2. Run the Flask application using `python main.py`.
 3. Access the application in your web browser at `http://localhost:5000`.
 
-## Contributors
-- Shashank Asthana 
-- Shreya Asthana
-- Archit Pant
-- Nidat Makadia
-- Adarsh Kumar Verma
 
-## 
 ## Contributors
 
 <a href="https://github.com/Shreya-Asthana">
